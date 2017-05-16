@@ -19,7 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 
-gem 'tele_notify', '~> 0.1.1'
+gem 'tele_notify', '~> 0.1.1', :path => '/home/alessandro/.rvm/gems/ruby-2.3.0/gems/tele_notify-0.1.1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
