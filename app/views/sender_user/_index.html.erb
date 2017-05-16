@@ -1,0 +1,15 @@
+
+<div class="container box">
+  <h2>Escribe tu mensaje a un usuario</h2>
+  <%= form_tag sender_user_index_path, method: :post do %>
+    <div class="form-group">
+      <label for="exampleInputEmail1">mensaje a Usuarios</label>
+      <%= text_field_tag :message, "", class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= collection_select(:telegram_user,:telegram_id,TeleNotify::TelegramUser.all,:id,:id,{:prompt => 'Elija un usuario'}, {class: "form-control"}) %>
+      <small id="emailHelp" class="form-text text-muted">Se enviara al usuario elegido</small>
+    </div>
+      <%= submit_tag "Enviar", class: 'btn btn-primary' %>
+  <% end %>
+</div>

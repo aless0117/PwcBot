@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <div class="container box">
+        <%= form_tag sender_index_path, method: :post do %>
+        <h2>Escribe tu mensaje al canal</h2>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Mensaje</label>
+            <%= text_field_tag :message, "", class: 'form-control' %>
+            <small id="emailHelp" class="form-text text-muted">Se enviará al canal</small>
+          </div>
+            <%= submit_tag "Enviar", class: 'btn btn-primary' %>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-6">
+      <%=render 'sender_user/index'%>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="container box">
+  <h2>Últimos mensajes</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Last text</th>
+      </tr>
+    </thead>
+    <tbody>
+  <% @messages.each do |message| %>
+      <tr>
+        <th scope="row">1</th>
+        <td><%= message.first_name %></td>
+        <td><%= message.last_name %></td>
+        <td><%= message.text %></td>
+      </tr>
+  <% end %>
+    </tbody>
+  </table>
+</div>
