@@ -1,5 +1,5 @@
 GIT
-  remote: /home/alessandro/.rvm/gems/ruby-2.3.0/gems/tele_notify-0.1.1
+  remote: https://github.com/aless0117/telegramgem
   revision: 55e837a6bf6f0212ada318fc3fa88a3c71ed1a74
   branch: master
   specs:
