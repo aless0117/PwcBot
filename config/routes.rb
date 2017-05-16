@@ -6,5 +6,7 @@ Rails.application.routes.draw do
 
   resources :sender_user
 
+  resources :messages
+
   post '/366674849:AAH2xDCGrXohH3RaWAMfzeoVggJceNbPFTA' => 'application#webhook'
 end

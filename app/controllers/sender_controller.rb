@@ -25,9 +25,7 @@ class SenderController < ApplicationController
     }
     @x = Net::HTTP.post_form(URI.parse("https://api.telegram.org/bot" + token + "/sendMessage"), params)
 
-
   end
-
 
 
 end
