@@ -12,6 +12,8 @@ class SenderUserController < ApplicationController
     @hola=params[:message]
     @hey=params[:telegram_user][:telegram_id]
 
+    
+
 
     TeleNotify::TelegramUser.find(@hey).send_message(@hola)
 

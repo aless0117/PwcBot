@@ -19,13 +19,19 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 
-gem 'TelegemBot', '~> 0.1.1'
+gem 'tele_notify', '~> 0.1.1', :git => 'https://github.com/aless0117/telegramgem', :branch => 'master'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+
+gem 'multipart-post'
+
+gem "paperclip", "~> 5.0.0"
+
+
 
 group :development do
   gem 'sqlite3'
@@ -38,7 +44,6 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
   group :production do
     gem 'pg'
