@@ -17,9 +17,10 @@ class SenderController < ApplicationController
 
 
 
-    id = "@pruebadelcanal"
+    id = "332541532l"
 
     token = "366674849:AAH2xDCGrXohH3RaWAMfzeoVggJceNbPFTA"
+
 
     params = {'chat_id' => id,
     'text' => @hola
