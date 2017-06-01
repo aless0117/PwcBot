@@ -28,6 +28,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'multipart-post'
+gem 'telegram-bot-ruby'
 
 gem "paperclip", "~> 5.0.0"
 

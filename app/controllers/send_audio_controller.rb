@@ -1,4 +1,4 @@
-class SendImageController < ApplicationController
+class SendAudioController < ApplicationController
   def index
     @telegramusers= TeleNotify::TelegramUser.all
 
@@ -9,7 +9,7 @@ class SendImageController < ApplicationController
   def create
 
 
-    @imagen = params[:photo]
+    @imagen = params[:audio]
 
 
     require "uri"
@@ -26,12 +26,9 @@ class SendImageController < ApplicationController
 
     Telegram::Bot::Client.run(token) do |bot|
 
-          bot.api.send_photo(chat_id: id, photo: Faraday::UploadIO.new(@imagen, 'image/jpeg'))
+          bot.api.send_audio(chat_id: id, audio: Faraday::UploadIO.new(@imagen, 'audio/mp3'))
 
       end
-
-
-
 
   end
 end
