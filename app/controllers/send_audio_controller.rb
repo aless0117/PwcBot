@@ -18,7 +18,8 @@ class SendAudioController < ApplicationController
 
     require 'telegram/bot'
 
-    id = "332541532l"
+    id = "@pruebadelcanal"
+
 
 
     token = "366674849:AAH2xDCGrXohH3RaWAMfzeoVggJceNbPFTA"
