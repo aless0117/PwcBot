@@ -15,9 +15,11 @@ class SenderController < ApplicationController
     require "net/http"
     require 'net/http/post/multipart'
 
+    #IDS PARA PRUEBAS
+      #332541532
+      #"@pruebadelcanal"
 
-
-    id = "@pruebadelcanal"
+    id = "332541532"
 
 
     token = "366674849:AAH2xDCGrXohH3RaWAMfzeoVggJceNbPFTA"
