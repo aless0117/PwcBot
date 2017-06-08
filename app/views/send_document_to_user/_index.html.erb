@@ -11,6 +11,10 @@
         <%= collection_select(:telegram_user,:telegram_id,TeleNotify::TelegramUser.all,:id,:first_name,{}, {:multiple => true, :class => "form-control", :id =>"exampleSelect2"}) %>
         <small id="emailHelp" class="form-text text-muted">Se enviara al usuario elegido</small>
       </div>
+      <div class="form-group">
+        <%= collection_select(:event,:event_id,Event.all,:id,:name,{},{:multiple => true, :class => "form-control", :id =>"exampleSelect2"}) %>
+        <small id="emailHelp" class="form-text text-muted">Se enviara al grupo elegido</small>
+      </div>
       <%= submit_tag "Enviar", class: 'btn btn-primary' %>
   <% end %>
 

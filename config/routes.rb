@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :event_to_users
   resources :events
   root 'sender#index'
 

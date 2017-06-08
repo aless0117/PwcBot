@@ -3,6 +3,12 @@
 <p>
   <strong>Name:</strong>
   <%= @event.name %>
+
+  <% @event.event_to_users.each do |p| %>
+
+        <%=p.user.first_name%>
+
+      <% end %>
 </p>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  telegram_id: MyString
+  last_name: MyString
+  first_name: MyString
+
+two:
+  telegram_id: MyString
+  last_name: MyString
+  first_name: MyString
