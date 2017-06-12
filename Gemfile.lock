@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/aless0117/telegramgem
-  revision: c27e9484d0658df263aa84a9539b929f2f1ee704
+  revision: 80a6e3a24e3c625ee177348d5b3bc7c5271a327c
   branch: master
   specs:
     tele_notify (0.1.1)
