@@ -13,15 +13,17 @@
 
   <div class="field">
     <%= f.label :event_id %>
-    <%= f.text_field :event_id %>
+
+    <%= collection_select(:event_to_user, :event_id, Event.all, :id, :name,{:prompt => 'Elige el evento', :class => "form-control"})%>
   </div>
+
 
   <div class="field">
     <%= f.label :user_id %>
-    <%= f.text_field :user_id %>
+    <%= collection_select(:telegram_user,:telegram_id,TeleNotify::TelegramUser.all,:id,:first_name,{},{:multiple => true, :class => "form-control", :id =>"exampleSelect2"}) %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: 'btn btn-primary' %>
   </div>
 <% end %>

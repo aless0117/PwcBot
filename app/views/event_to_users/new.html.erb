@@ -1,5 +1,11 @@
-<h1>New Event To User</h1>
 
-<%= render 'form', event_to_user: @event_to_user %>
+<div class="alleventuser">
 
-<%= link_to 'Back', event_to_users_path %>
+  <div class="container box">
+    <h1>Nuevo usuario a evento</h1>
+
+    <%= render 'form', event_to_user: @event_to_user %>
+
+    <%= link_to 'Back', event_to_users_path %>
+  </div>
+</div>

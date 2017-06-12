@@ -1,0 +1,97 @@
+
+    <div class="container centered">
+      <div class="row">
+        <div class="col-md-5">
+          <%= link_to sender_index_path do %>
+            <div class="card-1 window col-md-12" style="background-color: #dc6900;">
+              <svg style="width:100px;height:100px;" viewBox="0 0 24 24">
+                  <path fill="white" d="M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z" />
+              </svg>
+              <br>
+              <p>Message</p>
+           </div>
+         <% end %>
+       </div>
+       <div class="col-md-4">
+         <%= link_to send_image_index_path do %>
+           <div class="card-1 window col-md-12" style="background-color: #e0301e;">
+             <svg style="width:100px;height:100px;" viewBox="0 0 24 24">
+                <path fill="white" d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M6,20H15L18,20V12L14,16L12,14L6,20M8,9A2,2 0 0,0 6,11A2,2 0 0,0 8,13A2,2 0 0,0 10,11A2,2 0 0,0 8,9Z" />
+            </svg>
+            <p>Image</p>
+          </div>
+        <% end %>
+      </div>
+       <div class="col-md-3">
+         <%= link_to send_video_index_path do %>
+           <div class="card-1 window col-md-12" style="background-color: #602320;">
+             <svg style="width:100px;height:100px" viewBox="0 0 24 24">
+                 <path fill="white" d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M17,19V13L14,15.2V13H7V19H14V16.8L17,19Z" />
+             </svg>
+             <p>Video</p>
+           </div>
+         <% end %>
+       </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <%= link_to send_audio_index_path do %>
+            <div class="card-1 window col-md-12" style="background-color: #968c6d;">
+             <svg style="width:100px;height:100px;" viewBox="0 0 24 24">
+                <path fill="white" d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M9,16A2,2 0 0,0 7,18A2,2 0 0,0 9,20A2,2 0 0,0 11,18V13H14V11H10V16.27C9.71,16.1 9.36,16 9,16Z" />
+            </svg>
+             <p>Audio</p>
+           </div>
+         <% end %>
+       </div>
+       <div class="col-md-4">
+         <%= link_to send_document_index_path do %>
+           <div class="card-1 window col-md-12" style="background-color: #ffb600;">
+            <svg style="width:100px;height:100px;" viewBox="0 0 24 24">
+               <path fill="white" d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z" />
+           </svg>
+            <p>Document</p>
+          </div>
+        <% end %>
+      </div>
+       <div class="col-md-4">
+
+         <div class="row">
+           <div class="col-md-6">
+            <%= link_to events_path do %>
+             <div class="card-1 littlebox col-md-12" style="background-color: #db536a;">
+               <svg style="width:50px;height:50px" viewBox="0 0 24 24">
+                   <path fill="white" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+               </svg>
+               <p>Events</p>
+             </div>
+            <% end %>
+           </div>
+
+           <div class="col-md-6">
+
+             <div class="card-1 littlebox col-md-12" style="background-color: #3f3f40;">
+               <svg style="width:50px;height:50px;" viewBox="0 0 24 24">
+                  <path fill="white" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+              </svg>
+              <p>Users</p>
+             </div>
+
+           </div>
+         </div>
+
+          <div class="row">
+            <div class="col-md-12">
+            <%= link_to event_to_users_path do %>
+              <div class="card-1 littleboxi col-md-12" style="background-color: #dc6900;">
+                <svg style="width:50px;height:50px" viewBox="0 0 24 24" >
+                    <path fill="white" d="M18,19H6V17.6C6,15.6 10,14.5 12,14.5C14,14.5 18,15.6 18,17.6M12,7A3,3 0 0,1 15,10A3,3 0 0,1 12,13A3,3 0 0,1 9,10A3,3 0 0,1 12,7M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z" />
+                </svg>
+                <p>Users to Event</p>
+              </div>
+            <% end %>
+            </div>
+          </div>
+       </div>
+      </div>
+    </div>

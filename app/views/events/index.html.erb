@@ -1,27 +1,38 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Events</h1>
+<div class="allevent">
+  <div class="epa">
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  </div>
+      <div class="container tablebox card-2">
+        <table class="table">
+          <thead>
+            <h1>Eventos</h1>
+            <tr>
+              <th>Nombre de evento</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
 
-  <tbody>
-    <% @events.each do |event| %>
-      <tr>
-        <td><%= event.name %></td>
-        <td><%= link_to 'Show', event %></td>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+          <tbody>
+            <% @events.each do |event| %>
+              <tr>
+                <td><%= event.name %></td>
+                <td><%= link_to 'Show', event %></td>
+                <td><%= link_to 'Edit', edit_event_path(event) %></td>
+                <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
 
-<br>
+      <div class="epa">
+        <%= link_to new_event_path do %>
+          <svg class="create" viewBox="0 0 24 24">
+            <path fill="black" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+        </svg>
+        <% end %>
+      </div>
 
-<%= link_to 'New Event', new_event_path %>
+</div>

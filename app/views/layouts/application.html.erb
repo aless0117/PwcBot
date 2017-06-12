@@ -13,18 +13,13 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-              sectionsColor: ['#D84315', '#FFA726', 'whitesmoke', '#ccddff', '#ccddff'],
-              anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-              menu: '#menu',
-            });
-        });
-    </script>
+
   </head>
 
   <body>
-    <%= yield %>
+    <%= link_to root_path do %>
+      <%= image_tag("logo.png", :class =>"logo") %>
+    <% end %>
+  <%= yield %>
   </body>
 </html>

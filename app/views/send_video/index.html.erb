@@ -1,0 +1,23 @@
+<div class="allvideo">
+  <h1 style="text-align:center; color:white">Video</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="container box">
+          <%= form_tag send_video_index_path, method: :post, multipart: true do %>
+          <h2>Envia un video a los usuarios</h2>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Elige tu foto</label>
+                <%= file_field_tag :video %>
+                <small id="emailHelp" class="form-text text-muted">Se enviará al canal</small>
+              </div>
+              <%= submit_tag "Enviar", class: 'btn btn-primary' %>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-6">
+          <%=render 'send_video_to_user/index'%>
+      </div>
+    </div>
+  </div
+</div>

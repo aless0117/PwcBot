@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
   resources :event_to_users
   resources :events
-  root 'sender#index'
+  
+    root "main#index"
 
   resources :sender
 
@@ -22,7 +23,7 @@ Rails.application.routes.draw do
 
   resources :send_audio_to_user
 
-  resources :send_document 
+  resources :send_document
 
   resources :send_document_to_user
 
