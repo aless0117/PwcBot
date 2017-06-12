@@ -4,27 +4,12 @@
   <strong>Name:</strong>
   <%= @event.name %>
 
-
+  <% @event.event_to_users.each do |p| %>
 
         <%=p.user.first_name%>
 
       <% end %>
 </p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Nombre</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @event.event_to_users.each do |p| %>
-      <tr>
-        <td><%=p.user.first_name%> h</td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
