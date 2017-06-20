@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   resources :event_to_users
   resources :events
-  
+
     root "main#index"
 
   resources :sender
@@ -27,5 +27,5 @@ Rails.application.routes.draw do
 
   resources :send_document_to_user
 
-  post '/366674849:AAH2xDCGrXohH3RaWAMfzeoVggJceNbPFTA' => 'application#webhook'
+  post '/433749830:AAEhbBaPZIhZC5bGzmwwBZZ7NgzH5ZfcdCA' => 'application#webhook'
 end

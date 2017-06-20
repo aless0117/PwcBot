@@ -18,11 +18,11 @@ class SendDocumentController < ApplicationController
 
     require 'telegram/bot'
 
-    id = "332541532"
+    id = "@PwC_Venezuela"
 
 
 
-    token = "366674849:AAH2xDCGrXohH3RaWAMfzeoVggJceNbPFTA"
+    token = "433749830:AAEhbBaPZIhZC5bGzmwwBZZ7NgzH5ZfcdCA"
 
     Telegram::Bot::Client.run(token) do |bot|
           bot.api.send_document(chat_id: id, document: Faraday::UploadIO.new(@imagen, 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'))

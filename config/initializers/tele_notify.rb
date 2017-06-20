@@ -8,8 +8,9 @@ TeleNotify::TelegramUser.configure_home_url("https://infinite-sands-27039.heroku
 #Extract it and run "./ngrok http 3000"
 #Then copy the URL you get from the console window.
 #Remember to use the HTTPS URL!
-TeleNotify::TelegramUser.configure_dev_url("https://5c9a0ab4.ngrok.io")
+TeleNotify::TelegramUser.configure_dev_url("https://c73e96dd.ngrok.io")
 
 #Set your Telegram Bot API token here
 #Don't have your token yet? Create your bot using https://telegram.me/botfather
-TeleNotify::TelegramUser.configure_token("366674849:AAH2xDCGrXohH3RaWAMfzeoVggJceNbPFTA")
+#TeleNotify::TelegramUser.configure_token("366674849:AAH2xDCGrXohH3RaWAMfzeoVggJceNbPFTA")
+TeleNotify::TelegramUser.configure_token("433749830:AAEhbBaPZIhZC5bGzmwwBZZ7NgzH5ZfcdCA")

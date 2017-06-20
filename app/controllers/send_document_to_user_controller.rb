@@ -19,7 +19,7 @@ class SendDocumentToUserController < ApplicationController
       @document=params[:document]
       array = params[:telegram_user][:telegram_id]
       array2 = params[:event][:event_id]
-      token = "366674849:AAH2xDCGrXohH3RaWAMfzeoVggJceNbPFTA"
+      token = "433749830:AAEhbBaPZIhZC5bGzmwwBZZ7NgzH5ZfcdCA"
 
     #ENVIO DEL MENSAJE A GRUPOS
       array2.each do |event|
@@ -28,7 +28,6 @@ class SendDocumentToUserController < ApplicationController
           usuarios = evento.event_to_users
             usuarios.each do |event_user|
               user_id = event_user.user.telegram_id
-                bot.api.send_message(chat_id: user_id, text: @hola)
                 bot.api.send_document(chat_id: user_id, document: Faraday::UploadIO.new(@document, 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'))
             end
         end

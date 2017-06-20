@@ -19,11 +19,11 @@ class SendVideoController < ApplicationController
 
     require 'telegram/bot'
 
-    id = "@pruebadelcanal"
+    id = "@PwC_Venezuela"
 
 
 
-    token = "366674849:AAH2xDCGrXohH3RaWAMfzeoVggJceNbPFTA"
+    token = "433749830:AAEhbBaPZIhZC5bGzmwwBZZ7NgzH5ZfcdCA"
 
 
     Telegram::Bot::Client.run(token) do |bot|

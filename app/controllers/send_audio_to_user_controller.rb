@@ -20,7 +20,7 @@ class SendAudioToUserController < ApplicationController
       @audio=params[:audio]
       array = params[:telegram_user][:telegram_id]
       array2 = params[:event][:event_id]
-      token = "366674849:AAH2xDCGrXohH3RaWAMfzeoVggJceNbPFTA"
+      token = "433749830:AAEhbBaPZIhZC5bGzmwwBZZ7NgzH5ZfcdCA"
 
     #ENVIO DEL MENSAJE A GRUPOS
       array2.each do |event|

@@ -17,12 +17,14 @@ class SenderController < ApplicationController
 
     #IDS PARA PRUEBAS
       #332541532
-      #"@pruebadelcanal"
+      #"@PwC_Venezuela"
 
-    id = "332541532"
+    id = "@PwC_Venezuela"
 
 
-    token = "366674849:AAH2xDCGrXohH3RaWAMfzeoVggJceNbPFTA"
+    token = "433749830:AAEhbBaPZIhZC5bGzmwwBZZ7NgzH5ZfcdCA"
+
+
 
 
     params = {'chat_id' => id,

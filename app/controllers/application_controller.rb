@@ -3,6 +3,6 @@ class ApplicationController < ActionController::Base
 
   skip_before_filter :verify_authenticity_token, :only => :webhook
   include TeleNotify::Controller
-  
+
   require 'telegram/bot'
 end
