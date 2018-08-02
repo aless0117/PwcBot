@@ -1,24 +1,4 @@
-# README
+# PwcBot
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Telegram bot developed in Ruby On Rails, he's able to create events and save people to those events
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
